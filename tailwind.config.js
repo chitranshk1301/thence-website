@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'covered-by-your-grace': ['"Covered By Your Grace"', 'sans-serif'],
+        'manrope': ['"Manrope"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
   mode: 'jit'
