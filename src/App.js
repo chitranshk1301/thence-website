@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import HomePage from "./pages/homepage";
+import Register from "./pages/register";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>

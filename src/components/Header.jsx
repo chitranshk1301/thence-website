@@ -11,7 +11,7 @@ const Header = () => {
                 <Link to="/"><Logo /></Link>
             </div>
             <div className='flex flex-row gap-4'>
-                <Link to="/">
+                <Link to="/register">
                     <SecondaryButton
                         text="Get Projects"
                         width="189.56px"

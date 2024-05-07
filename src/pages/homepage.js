@@ -6,6 +6,8 @@ import Card1 from '../components/Card1'
 import Card2 from '../components/Card2'
 import Card3 from '../components/Card3'
 import Union from '../assets/union'
+import ClickToRevealText from '../components/ClickToRevealText'
+import Footer from '../components/Footer'
 
 const HomePage = () => {
   return (
@@ -17,6 +19,7 @@ const HomePage = () => {
       <div className='flex flex-col md:flex-row h-screen gap-2 mt-24 md:px-[54px] px-4'>
         <div className='w-[727.49px] h-[596px] relative -z-50'>
           <img src={Image}
+            alt="image"
             className='w-[506.98px] h-[546.27px] rounded-[50.7px] ml-[144.69px]'
           />
           <Card1 />
@@ -46,7 +49,7 @@ const HomePage = () => {
       </div>
       {/* Success stories section ends */}
 
-      <div className='h-screen border bg-[#E8EEE7] rounded-[40px] px-[32px]'>
+      <div className='h-screen border bg-[#E8EEE7] rounded-[40px] px-[32px] py-[32px] flex flex-row'>
         <div>
           <h3 className='font-covered-by-your-grace text-[32px] text-[#9E9D9D] font-[400]'>What’s on your mind</h3>
           <h1 className='font-manrope text-[60px] font-[600]'>Ask Questions</h1>
@@ -56,9 +59,10 @@ const HomePage = () => {
         </div>
 
         <div>
-
+          <ClickToRevealText />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
