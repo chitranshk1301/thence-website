@@ -18,8 +18,8 @@ This project is a Create React App with Tailwind CSS for styles, Framer Motion f
 
 ## Usage
 To run the project locally, use the following command:
-    ```bash
-    npm run start
+   ```bash
+   npm run start
 
 ### Note!
 This project is not made responsive and is optimized for viewing on a 15-inch display.
