@@ -4,6 +4,7 @@ import InputField from '../components/InputField';
 import PrimaryButton from '../components/PrimaryButton';
 import Error from '../assets/error'
 import { Link } from 'react-router-dom';
+import Header from '../components/Header2';
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -33,10 +34,10 @@ const Register = () => {
     };
 
     return (
-        <div className='mt-[50px]'>
-            <div></div>
+        <div>
+            <Header />
 
-            <h3 className='text-[36px] font-[400] font-covered-by-your-grace text-[#2DA950] flex justify-center'>Registration Form</h3>
+            <h3 className='text-[36px] font-[400] font-covered-by-your-grace text-[#2DA950] flex justify-center mt-[20px]'>Registration Form</h3>
             <h1 className='text-[56px] font-[600] leading-[67.2px] font-manrope flex justify-center text-center'>Start your success <br /> Journey here!</h1>
 
             <motion.div

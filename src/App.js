@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,7 +10,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<Register />} />

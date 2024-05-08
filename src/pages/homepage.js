@@ -7,11 +7,14 @@ import Card2 from '../components/Card2'
 import Card3 from '../components/Card3'
 import Union from '../assets/union'
 import Footer from '../components/Footer'
+import Header from '../components/Header'
 import AccordionArray from '../components/AccordionArray'
+
 
 const HomePage = () => {
   return (
-    <div className='mt-[50px] p-[24px]'>
+    <div className='px-[24px]'>
+      <Header />
       {/* Success stories section */}
       <h3 className='text-[36px] font-[400] font-covered-by-your-grace text-[#2DA950] flex justify-center'>Success Stories</h3>
       <h1 className='text-[56px] font-[600] leading-[67.2px] font-manrope flex justify-center text-center'>Every success journey <br /> we’ve encountered.</h1>
