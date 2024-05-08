@@ -19,7 +19,7 @@ const HomePage = () => {
       <div className='flex flex-col md:flex-row h-screen gap-2 mt-24 md:px-[54px] px-4'>
         <div className='w-[727.49px] h-[596px] relative -z-50'>
           <img src={Image}
-            alt="image"
+            alt="girl"
             className='w-[506.98px] h-[546.27px] rounded-[50.7px] ml-[144.69px]'
           />
           <Card1 />

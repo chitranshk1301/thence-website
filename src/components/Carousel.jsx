@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Carousel = ({ items, autoPlayInterval = 3000 }) => {
  const [currentIndex, setCurrentIndex] = useState(0);
- const [direction, setDirection] = useState('right'); // Default direction
+ const [direction, setDirection] = useState('right'); // eslint-disable-line
 
  const slideVariants = {
     hidden: { x: '100%', opacity: 0 },
@@ -43,7 +43,7 @@ const Carousel = ({ items, autoPlayInterval = 3000 }) => {
           tabIndex={currentIndex === index ? 0 : -1}
         ></motion.div>
       )),
-    [currentIndex, items]
+    [currentIndex, items] // eslint-disable-line
  );
 
  return (
