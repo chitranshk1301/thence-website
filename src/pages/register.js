@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import InputField from '../components/InputField';
 import PrimaryButton from '../components/PrimaryButton';
 
@@ -16,6 +17,13 @@ const Register = () => {
 
     const isButtonEnabled = input1.trim() !== '' && input2.trim() !== '';
 
+    // Define animation variants
+    const formVariants = {
+        hidden: { y: '100%', opacity: 0 },
+        visible: { y: '0%', opacity: 1, transition: { duration: 0.5 } },
+        exit: { y: '-100%', opacity: 0, transition: { duration: 0.5 } },
+    };
+
     return (
         <div className='mt-[50px]'>
             <div></div>
@@ -23,7 +31,14 @@ const Register = () => {
             <h3 className='text-[36px] font-[400] font-covered-by-your-grace text-[#2DA950] flex justify-center'>Registration Form</h3>
             <h1 className='text-[56px] font-[600] leading-[67.2px] font-manrope flex justify-center text-center'>Start your success <br /> Journey here!</h1>
 
-            <form className='flex flex-col gap-8 justify-center items-center mt-10'>
+            {/* Wrap the form with motion.div and apply animation variants */}
+            <motion.div
+                className='flex flex-col gap-8 justify-center items-center mt-10'
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                variants={formVariants}
+            >
                 <InputField onChange={handleInput1Change} placeholder="Enter your name" />
                 <InputField onChange={handleInput2Change} placeholder="Enter your email" />
 
@@ -33,7 +48,7 @@ const Register = () => {
                     height="77.22px"
                     disabled={!isButtonEnabled}
                 />
-            </form>
+            </motion.div>
         </div>
     );
 };
