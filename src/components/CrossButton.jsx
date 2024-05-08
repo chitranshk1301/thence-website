@@ -3,7 +3,7 @@ import Cross from '../assets/cross'
 
 const CrossButton = () => {
   return (
-    <div>
+    <div className='hover:opacity-50 transition-all'>
         <Cross />
     </div>
   )
