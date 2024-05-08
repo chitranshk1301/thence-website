@@ -49,7 +49,7 @@ const Carousel = ({ items, autoPlayInterval = 3000 }) => {
  return (
     <div className="carousel mx-auto max-w-screen-md flex flex-col items-center">
       <div className="carousel-content w-[398px] h-[250px] overflow-hidden">
-        <AnimatePresence>
+        <AnimatePresence mode='wait'>
           {items.length > 0 ? (
             <motion.div
               key={currentIndex}

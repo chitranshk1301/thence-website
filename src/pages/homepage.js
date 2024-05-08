@@ -6,8 +6,8 @@ import Card1 from '../components/Card1'
 import Card2 from '../components/Card2'
 import Card3 from '../components/Card3'
 import Union from '../assets/union'
-import ClickToRevealText from '../components/ClickToRevealText'
 import Footer from '../components/Footer'
+import AccordionArray from '../components/AccordionArray'
 
 const HomePage = () => {
   return (
@@ -59,7 +59,7 @@ const HomePage = () => {
         </div>
 
         <div>
-          <ClickToRevealText />
+          <AccordionArray />
         </div>
       </div>
       <Footer />
